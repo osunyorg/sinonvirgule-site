@@ -1,0 +1,24 @@
+---
+title: Menu
+items:
+- title: Menu
+  target: ''
+  kind: blank
+  children:
+  - title: Méthode
+    target: "/methode/"
+    kind: page
+    children: []
+  - title: Projets
+    target: "/projets/"
+    kind: page
+    children: []
+  - title: Manifeste
+    target: "/manifeste/"
+    kind: page
+    children: []
+  - title: Equipe repentie
+    target: "/equipe-repentie/"
+    kind: page
+    children: []
+
