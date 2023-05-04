@@ -21,4 +21,8 @@ items:
     target: "/equipe-repentie/"
     kind: page
     children: []
+- title: Projets2
+  target: "/projets-1/"
+  kind: page
+  children: []
 
