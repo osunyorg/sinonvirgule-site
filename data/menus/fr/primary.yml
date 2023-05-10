@@ -1,7 +1,7 @@
 ---
 title: Menu
 items:
-- title: Menu
+- title: "☰"
   target: ''
   kind: blank
   children:
