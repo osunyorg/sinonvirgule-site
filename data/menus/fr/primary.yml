@@ -13,10 +13,6 @@ items:
   target: "/equipe-repentie/"
   kind: page
   children: []
-- title: Menu
-  target: ''
-  kind: blank
-  children: []
 - title: Nos collabs
   target: ''
   kind: blank
