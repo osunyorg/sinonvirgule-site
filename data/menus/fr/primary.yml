@@ -22,7 +22,7 @@ items:
   kind: blank
   children:
   - title: Accueil | ooonehealth
-    target: "/actualites/2023-05-19-accueil-ooonehealth/"
-    kind: post
+    target: https://www.ooonehealth.fr/
+    kind: url
     children: []
 
