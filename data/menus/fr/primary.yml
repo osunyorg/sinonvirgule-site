@@ -22,7 +22,7 @@ items:
   kind: blank
   children: []
 - title: Oonehealth
-  target: "/actualites/2023-01-01-etude-oonehealth/"
+  target: "/actualites/2023-05-19-accueil-ooonehealth/"
   kind: post
   children: []
 
