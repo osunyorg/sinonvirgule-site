@@ -1,18 +1,18 @@
 ---
 title: Menu
 items:
+- title: Manifeste
+  target: "/manifeste/"
+  kind: page
+  children: []
+- title: Projets
+  target: "/projets/"
+  kind: page
+  children: []
 - title: Menu
   target: ''
   kind: blank
   children:
-  - title: Manifeste
-    target: "/manifeste/"
-    kind: page
-    children: []
-  - title: Projets
-    target: "/projets/"
-    kind: page
-    children: []
   - title: Équipe
     target: "/equipe-repentie/"
     kind: page
