@@ -5,12 +5,12 @@ items:
   target: ''
   kind: blank
   children:
-  - title: Projets
-    target: "/projets/"
-    kind: page
-    children: []
   - title: Manifeste
     target: "/manifeste/"
+    kind: page
+    children: []
+  - title: Projets
+    target: "/projets/"
     kind: page
     children: []
   - title: Equipe repentie
