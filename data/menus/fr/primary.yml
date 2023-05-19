@@ -20,5 +20,9 @@ items:
 - title: Nos collabs
   target: ''
   kind: blank
-  children: []
+  children:
+  - title: Accueil | ooonehealth
+    target: "/actualites/2023-05-19-accueil-ooonehealth/"
+    kind: post
+    children: []
 
