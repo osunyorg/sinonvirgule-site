@@ -5,10 +5,6 @@ items:
   target: ''
   kind: blank
   children:
-  - title: Méthode
-    target: "/methode/"
-    kind: page
-    children: []
   - title: Projets
     target: "/projets/"
     kind: page
