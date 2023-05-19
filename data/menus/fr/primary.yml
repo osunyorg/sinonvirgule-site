@@ -17,4 +17,8 @@ items:
     target: "/equipe-repentie/"
     kind: page
     children: []
+- title: Nos collabs
+  target: ''
+  kind: blank
+  children: []
 
