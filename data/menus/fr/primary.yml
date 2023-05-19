@@ -5,6 +5,10 @@ items:
   target: "/manifeste/"
   kind: page
   children: []
+- title: Projets
+  target: "/projets/"
+  kind: page
+  children: []
 - title: Équipe
   target: "/equipe-repentie/"
   kind: page
@@ -17,8 +21,4 @@ items:
     target: https://www.ooonehealth.fr/
     kind: url
     children: []
-- title: Projets
-  target: "/projets/"
-  kind: page
-  children: []
 
