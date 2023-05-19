@@ -21,8 +21,4 @@ items:
   target: ''
   kind: blank
   children: []
-- title: Oonehealth
-  target: "/actualites/2023-05-19-accueil-ooonehealth/"
-  kind: post
-  children: []
 
