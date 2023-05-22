@@ -9,10 +9,6 @@ items:
   target: "/projets/"
   kind: page
   children: []
-- title: Équipe
-  target: "/equipe-repentie/"
-  kind: page
-  children: []
 - title: Nos collabs
   target: ''
   kind: blank
@@ -21,4 +17,8 @@ items:
     target: https://www.ooonehealth.fr/
     kind: url
     children: []
+- title: Équipe repentie
+  target: "/equipe-repentie/"
+  kind: page
+  children: []
 
