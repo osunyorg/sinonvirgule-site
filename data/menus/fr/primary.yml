@@ -5,8 +5,8 @@ items:
   target: "/manifeste/"
   kind: page
   children: []
-- title: Projets
-  target: "/projets/"
+- title: Nos projets
+  target: "/nos-projets/"
   kind: page
   children: []
 - title: Équipe

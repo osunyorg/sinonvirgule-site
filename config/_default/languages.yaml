@@ -6,7 +6,8 @@ fr:
   languageCode: fr
   languageName: Français
   permalinks:
-    categories: /projets/:slug/
-    posts: /projets/:year-:month-:day-:slug/
+    categories: /actualites/:slug/
+    posts: /actualites/:year-:month-:day-:slug/
+    organizations: /organisations/:slug/
     persons: /equipe-repentie/:slug/
-    authors: /equipe-repentie/:slug/projets/
+    authors: /equipe-repentie/:slug/actualites/

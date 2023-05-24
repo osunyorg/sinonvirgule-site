@@ -18,31 +18,57 @@ bodyclass:
 
 children:
   - /manifeste/
-  - /projets/
   - /equipe-repentie/
+  - /nos-projets/
 meta_description: >
   
 description: >
   
 
 summary: >
-  
+  Nous étudions les collisions entre nos organisations et l’Anthropocène pour dessiner des sociétés plus compatibles avec les limites planétaires.
 description_short: >
-  
+  Nous étudions les collisions entre nos organisations et l’Anthropocène pour dessiner des sociétés plus compatibles avec les limites planétaires.
 
 header_text: >-
-  
+  Redirection écologique
 legacy_text: >
   
 blocks:
+  - template: pages
+    title: >-
+      
+    position: 2
+    data:
+      show_main_description: false
+      show_descriptions: false
+      show_images: false
+      layout: grid
+      pages:
+        - page: /manifeste/
+          slug: /manifeste/
+        - page: /equipe-repentie/
+          slug: /equipe-repentie/
+  - template: posts
+    title: >-
+      Découvrez nos collaborations
+    position: 3
+    data:
+      category: "/test/"
+      layout: highlight
+      posts:
+        - "2023/2023-05-24-test-5"
+        - "2023/2023-05-24-test-4"
+        - "2023/2023-05-24-test-3"
+        - "2023/2023-05-24-test-2"
   - template: chapter
     title: >-
-      Redirection écologique
-    position: 1
+      
+    position: 4
     data:
       layout: no_background
       text: >-
-        <p>Nous étudions les collisions entre nos organisations et l’Anthropocène pour dessiner des sociétés plus compatibles avec les limites planétaires.</p>
+        
 
 
       notes: >-
@@ -59,18 +85,6 @@ blocks:
         
 
 
-  - template: pages
-    title: >-
-      
-    position: 2
-    data:
-      show_main_description: false
-      show_descriptions: false
-      show_images: false
-      layout: grid
-      pages:
-        - page: /manifeste/
-          slug: /manifeste/
 
 
 ---
