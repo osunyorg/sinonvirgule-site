@@ -21,4 +21,8 @@ items:
     target: https://www.ooonehealth.fr/
     kind: url
     children: []
+- title: Projets 2
+  target: "/projets-2/"
+  kind: page
+  children: []
 
