@@ -13,29 +13,33 @@
             font-weight: normal
             @include media-breakpoint-up(desktop)
                 font-size: 42px
+        .block 
+            .block-pages 
+                .grid a,.link
+                    font-size: 16px
     header#document-header
         background: $color-accent
         .menu
             display: none
+        
 
 
 footer#document-footer
-    padding-top: 61px
-    padding-bottom: 64px
-    padding-left: 64px
+    padding: 64px
     .footer-logo
-        opacity: 0
+        display: none
     &, ul, li, a
         font-weight: 300
         font-size: 16px
-        line-height: 21px
+        line-height: 12px
     .container + .container 
-                padding-top: 0rem
+        padding: 0rem
     .container 
         padding-bottom: 0rem
         .footer-credit 
             font-weight: normal
             font-size: 16px
+            margin-top: 5px
 
 .block-testimonials blockquote p
         font-style: normal
