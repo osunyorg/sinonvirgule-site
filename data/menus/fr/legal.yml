@@ -1,5 +1,5 @@
 ---
-title: 'translation missing: fr.communication.menus.default_title.legal'
+title: Menu légal
 items:
 - title: Mentions légales
   target: "/mentions-legales/"
