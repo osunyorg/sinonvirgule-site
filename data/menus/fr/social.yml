@@ -1,4 +1,8 @@
 ---
 title: Menu social
-items: []
+items:
+- title: contact@sinonvirgule.fr
+  target: mailto:contact@sinonvirgule.fr
+  kind: url
+  children: []
 
