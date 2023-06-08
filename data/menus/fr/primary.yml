@@ -9,7 +9,7 @@ items:
   target: "/projets-2/"
   kind: page
   children: []
-- title: Équipe
+- title: Notre équipe
   target: "/equipe-repentie/"
   kind: page
   children: []
