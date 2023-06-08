@@ -1,15 +1,15 @@
 ---
 title: Menu
 items:
-- title: Manifeste
+- title: Notre manifeste
   target: "/manifeste/"
   kind: page
   children: []
 - title: Nos projets
-  target: "/nos-projets/"
+  target: "/projets/"
   kind: page
   children: []
-- title: Équipe
+- title: Notre équipe
   target: "/equipe-repentie/"
   kind: page
   children: []
@@ -21,8 +21,4 @@ items:
     target: https://www.ooonehealth.fr/
     kind: url
     children: []
-- title: Projets 2
-  target: "/projets-2/"
-  kind: page
-  children: []
 

@@ -1,9 +1,11 @@
 ---
 title: >
-  Nos projets
-breadcrumb_title: "Nos projets"
-url: "/nos-projets/"
-slug: "nos-projets"
+  Projets
+breadcrumb_title: "Projets"
+url: "/projets/"
+slug: "projets"
+aliases:
+  - /projets-2/
 
 full_width: true
 design:
@@ -12,15 +14,15 @@ design:
     present: false
     offcanvas: true
 
-position: 10
-translation_key: communication-website-page-10560396-f9ef-4a3f-8883-0f5a6c82778c
+position: 2
+translation_key: communication-website-page-8207e304-9909-4969-872d-0ba64a2cc6df
 
 bodyclass: 
 
 children:
-  - /nos-projets/eveil-1/
-  - /nos-projets/etude/
-  - /nos-projets/conseil-1/
+  - /projets/eveil/
+  - /projets/etude/
+  - /projets/conseil/
 meta_description: >
   
 description: >
@@ -32,26 +34,27 @@ description_short: >
   Depuis notre création en 2021, nous travaillons selon trois formats différents. L’étude tout d’abord, en nous saisissant chaque année de sujets ambitieux qui nous tiennent à coeur et que nous souhaitons explorer librement, grâce au soutien financier et de recherche d’un écosystème de partenaires. Le conseil ensuite, en travaillant main dans la main avec des entreprises et collectivités publiques, afin d’amorcer puis d’accompagner leur redirection écologique. L’éveil enfin, pour sensibiliser différentes sphères (salariée, citoyenne, étudiante) aux impacts de l’Anthropocène et aux arbitrages qu’il rend nécessaire.
 
 header_text: >-
-  Nos projets
+  
 legacy_text: >
   
 blocks:
-  - template: posts
+  - template: pages
     title: >-
       
     position: 1
     data:
-      all: true
+      page: /projets/
+      show_main_description: false
+      show_descriptions: true
+      show_images: true
       layout: grid
-      posts:
-        - "2023/2023-01-01-etude-oonehealth"
-        - "2023/2023-06-05-redirection-ecologique-et-jeunes-dirigeants"
-        - "2023/2023-05-24-test-5"
-        - "2023/2023-05-24-test-4"
-        - "2023/2023-05-24-test-3"
-        - "2023/2023-05-24-test-2"
-        - "2023/2023-05-24-test-1"
-        - "2023/2023-04-19-redirection-ecologique-des-dirigeantes-1"
+      pages:
+        - page: /projets/eveil/
+          slug: /projets/eveil/
+        - page: /projets/etude/
+          slug: /projets/etude/
+        - page: /projets/conseil/
+          slug: /projets/conseil/
 
 
 ---
