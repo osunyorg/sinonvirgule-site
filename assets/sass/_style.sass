@@ -5,12 +5,14 @@
     &, .hero, main a, main .link
         color: $color-background-alt
         .content > h1
-            font-size: 160px
-            line-height: 160px
+            @include media-breakpoint-up(desktop)
+                font-size: 160px
+                line-height: 160px
         .lead
             font-family: "Crossten",sans-serif
             font-weight: normal
-            font-size: 42px
+            @include media-breakpoint-up(desktop)
+                font-size: 42px
 
 
 .call_to_action
@@ -19,9 +21,10 @@
         font-size: 24px
 
 footer#document-footer
-    padding: 0%
+    padding: 10%
     .footer-logo
         opacity: 0
+    .container
         
 
         
