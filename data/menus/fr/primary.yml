@@ -1,5 +1,5 @@
 ---
-title: Menu
+title: Menu principal
 items:
 - title: Notre manifeste
   target: "/manifeste/"
@@ -10,7 +10,7 @@ items:
   kind: page
   children: []
 - title: Notre équipe
-  target: "/equipe-repentie/"
+  target: "/notre-equipe/"
   kind: page
   children: []
 - title: Nos collabs
