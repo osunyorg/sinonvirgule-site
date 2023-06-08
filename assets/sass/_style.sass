@@ -13,12 +13,23 @@
             font-weight: normal
             @include media-breakpoint-up(desktop)
                 font-size: 42px
+                width: 1085px
         .block 
-            .block-pages 
-                .grid a,.link
-                    font-size: 16px
+            &, a,.link
+                    font-size: 24px
+                    font-weight: 300
     header#document-header
         background: $color-accent
+        .logo img
+            height: 64px
+            width: 130.19px
+            @mixin background-svg-content($image)
+                background-image: none
+                background-color: white
+                -webkit-mask-image:  url($image)
+                mask-image: url($image)
+                -webkit-mask-size: cover
+                mask-size: cover
         .menu
             display: none
         
