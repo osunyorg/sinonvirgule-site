@@ -29,13 +29,7 @@
         .logo img
             height: 64px
             width: 130.19px
-            @mixin background-svg-content($image)
-                background-image: none
-                background-color: white
-                -webkit-mask-image:  url($image)
-                mask-image: url($image)
-                -webkit-mask-size: cover
-                mask-size: cover
+            img: url("/assets/images/logo_blanc.svg")
         .menu
             display: none
         nav button[type="button"] 
@@ -97,5 +91,17 @@ header#document-header
     font-weight: 300
 
 .image-landscape
-    .glightbox
+    .container
+        margin: 0
+        padding: 64px
+        max-width: 100%
+.blocks .block-image figure img, body.full-width .block-image figure img 
     width: 100%
+    height: 460px
+    object-fit: cover
+    
+                
+.pages__section
+    header#document-header
+        .logo-img
+           img: url('assets/images/logo.svg')

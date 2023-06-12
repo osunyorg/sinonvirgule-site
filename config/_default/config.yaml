@@ -5,6 +5,7 @@ removePathAccents: true
 params:
   logo:
     header: "/assets/images/logo_blanc.svg"
+    header: "/assets/images/logo.svg"
   posts:
     index:
       show_categories: true
