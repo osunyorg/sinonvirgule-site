@@ -2,9 +2,16 @@
 //Landingpage
 
 .page__home
-    background:
-        attachment: fixed
-        color: $color-accent
+    background: $color-accent 
+    main::after
+        position: absolute
+        content: ""
+        background-image: url(/assets/images/rectangle140.png)
+        right: 0
+        left: 0
+        bottom: 0
+        top: 0
+        height: 1300px
     &, .hero, main a, main .link
         color: $color-background-alt
         .content > h1
@@ -31,16 +38,18 @@
                 font-size: 42px
                 width: 1085px
     header#document-header
-        background: $color-accent
+        background: none
         .logo img
             height: 64px
             width: 130.19px
-            img: url("/assets/images/logo_blanc.svg")
         .menu
             display: none
         nav button[type="button"] 
             display: none
-        
+
+
+
+
 
 //footer
 footer#document-footer
@@ -104,9 +113,3 @@ header#document-header
     width: 100%
     height: 460px
     object-fit: cover
-
-                
-.pages__section
-    header#document-header
-        .logo-img
-           img: url('assets/images/logo.svg')
