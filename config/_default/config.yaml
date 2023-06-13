@@ -5,6 +5,8 @@ removePathAccents: true
 params:
   logo:
     header: "/assets/images/logo.svg"
+  summary:
+    position: hero
   posts:
     index:
       show_categories: true
