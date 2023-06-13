@@ -3,8 +3,8 @@
 
 .page__home
     background:
-        color: $color-accent
         attachment: fixed
+        color: $color-accent
     &, .hero, main a, main .link
         color: $color-background-alt
         .content > h1
@@ -12,12 +12,16 @@
             @include media-breakpoint-up(desktop)
                 font-size: 160px
                 line-height: 160px
-        .block
-            .grid
+        .blocks
+            .block-pages--grid
+                .grid
+                    @include media-breakpoint-up(desktop)
+                        display: flex
+                        justify-content: flex-end
             &, a,.link
                 font-size: 24px
                 font-weight: 300
-                text-align: right
+                text-align: right   
         .lead
             text-align: left
             font-family: "Crossten",sans-serif
@@ -47,8 +51,6 @@ footer#document-footer
         font-weight: 300
         font-size: 16px
         line-height: 12px
-    .container + .container 
-        padding: 0rem
     .container 
         padding-bottom: 0rem
         .footer-credit 
