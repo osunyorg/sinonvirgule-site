@@ -1,5 +1,10 @@
 
 //Landingpage
+// @keyframes noise
+//     from
+//         width:0%
+//     to    
+//     100%
 
 .page__home
     background: $color-accent 
@@ -14,6 +19,8 @@
             left: 0
             bottom: 0
             top: 0
+            animation-duration: 15s
+            animation-name: noise
     .hero
         padding-bottom: 0
         .container
@@ -42,18 +49,13 @@
                 font-weight: 300
                 text-align: right   
         .lead
-            text-align: left
-            font-family: "Crossten",sans-serif
+            font-family: $heading-font-family
             font-weight: normal
-            font-size: 32px
+            font-size: px2rem(32)
             @include media-breakpoint-up(desktop)
-                font-size: 42px
-                width: 1085px
+                font-size: px2rem(42)
     header#document-header
         display: none
-
-
-
 
 
 //footer
@@ -91,6 +93,8 @@ footer#document-footer
         bottom: 0
         top: 0
         opacity: 33%
+        animation-duration: 15s
+        animation-name: noise
     .call_to_action
         position: relative
         z-index: 1
