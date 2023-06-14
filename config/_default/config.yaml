@@ -10,5 +10,3 @@ params:
   posts:
     index:
       show_categories: true
-      summary:
-    position: hero
