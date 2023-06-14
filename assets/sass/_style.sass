@@ -8,10 +8,10 @@
         
 
 .page__home
-    background: $color-accent 
     main
         position: relative
         &::after
+            background: $color-accent 
             position: absolute
             z-index: -1
             content: ""
@@ -25,6 +25,7 @@
             animation-iteration-count: infinite
     .hero
         padding-bottom: 0
+        // height: 100%
         .container
             .content::before
                 content: ""
@@ -33,7 +34,7 @@
                 height: 64px
                 display: block
     &, .hero, main a, main .link
-        color: $color-background-alt
+        color: $color-text-home
         .content > h1
             font-size: pxrem(70)
             @include media-breakpoint-up(desktop)
@@ -115,3 +116,11 @@ header#document-header
     .logo img
         width: 100px
         height: 50px
+
+.organizations
+    .media
+        background-color: white
+
+.hero 
+    .content > hgroup 
+    width: col(12)
