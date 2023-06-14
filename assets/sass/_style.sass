@@ -80,8 +80,20 @@ footer#document-footer
         font-weight: normal
 
 //cta
-.block-call_to_action 
-    .call_to_action 
+.block-call_to_action
+    position: relative
+    &::after
+        position: absolute
+        z-index: 0
+        content: ""
+        background-image: url(/assets/images/rectangle140.png)
+        right: 0
+        left: 0
+        bottom: 0
+        top: 0
+    .call_to_action
+        position: relative
+        z-index: 1
         .description p
             font-size: 24px
             font-weight: 300
