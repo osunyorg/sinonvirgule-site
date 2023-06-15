@@ -1,18 +1,34 @@
 
 //Landingpage
-@keyframes noise
-    0%
-        
-    100%
-
-        
+// @keyframes noise
+//     0%, 100% 
+//         transform: translate(0,0) 
+//     10%  
+//         transform: translate(-5%,0) 
+//     20% 
+//         transform: translate(-10%,0) 
+//     30% 
+//         transform: translate(5%,0) 
+//     40% 
+//         transform: translate(-5%,0) 
+//     50% 
+//         transform: translate(-10%,0) 
+//     60% 
+//         transform: translate(15%,0) 
+//     70% 
+//         transform: translate(0,0) 
+//     80% 
+//         transform: translate(-15%,0) 
+//     90% 
+//         transform: translate(10%,0) 
 
 .page__home
-    background: $color-accent 
     main
         position: relative
         &::after
-            position: absolute
+            animation: noise 1s infinite
+            background: $color-accent 
+            // position: absolute
             z-index: -1
             content: ""
             background-image: url(/assets/images/rectangle140.png)
@@ -20,9 +36,7 @@
             left: 0
             bottom: 0
             top: 0
-            animation-duration: 1s
-            animation-name: noise
-            animation-iteration-count: infinite
+            position: fixed
     .hero
         padding-bottom: 0
         .container
@@ -33,7 +47,7 @@
                 height: 64px
                 display: block
     &, .hero, main a, main .link
-        color: $color-background-alt
+        color: #FFFFFF
         .content > h1
             font-size: pxrem(70)
             @include media-breakpoint-up(desktop)
@@ -56,6 +70,7 @@
             font-size: px2rem(32)
             @include media-breakpoint-up(desktop)
                 font-size: px2rem(42)
+                width: col(9)
     header#document-header
         display: none
 
@@ -111,7 +126,14 @@ footer#document-footer
     height: 460px
     object-fit: cover
 
-header#document-header
-    .logo img
-        width: 100px
-        height: 50px
+.organizations
+    .media
+        background-color: white
+
+.hero 
+    .content > hgroup 
+        width: col(12)
+
+.hero--with-image
+    .content > hgroup
+        width: col(8)
