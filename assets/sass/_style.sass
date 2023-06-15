@@ -1,42 +1,37 @@
 
 //Landingpage
-// @keyframes noise
-//     0%, 100% 
-//         transform: translate(0,0) 
-//     10%  
-//         transform: translate(-5%,0) 
-//     20% 
-//         transform: translate(-10%,0) 
-//     30% 
-//         transform: translate(5%,0) 
-//     40% 
-//         transform: translate(-5%,0) 
-//     50% 
-//         transform: translate(-10%,0) 
-//     60% 
-//         transform: translate(15%,0) 
-//     70% 
-//         transform: translate(0,0) 
-//     80% 
-//         transform: translate(-15%,0) 
-//     90% 
-//         transform: translate(10%,0) 
+@keyframes noise
+    0%     100% 
+        background-position: 0 0
+    20%
+        background-position: -10px 50px
+    40%
+        background-position: -50px 15px
+    60%
+        background-position: 150px 0
+    80%
+        background-position: -150px 50
+   
+@mixin backgroundnoise
+    animation: noise 0.2s infinite linear
+    background: $color-accent 
+    position: absolute
+    z-index: -1
+    content: ""
+    background-image: url(/assets/images/9.png)
+    right: 0
+    left: 0
+    bottom: 0
+    top: 0
+
+
 
 .page__home
     main
         position: relative
+        min-height: 100vh
         &::after
-            animation: noise 1s infinite
-            background: $color-accent 
-            // position: absolute
-            z-index: -1
-            content: ""
-            background-image: url(/assets/images/rectangle140.png)
-            right: 0
-            left: 0
-            bottom: 0
-            top: 0
-            position: fixed
+            @include backgroundnoise
     .hero
         padding-bottom: 0
         .container
@@ -46,24 +41,13 @@
                 width: 130.19px
                 height: 64px
                 display: block
-    &, .hero, main a, main .link
-        color: #FFFFFF
-        .content > h1
-            font-size: pxrem(70)
+        .content h1
+            font-size: px2rem(70)
             @include media-breakpoint-up(desktop)
-                font-size: pxrem(160)
-                line-height: 160px
+                font-size: px2rem(160)
+                line-height: px2rem(160)
                 margin-top: $spacing4
-        .blocks
-            .block-pages--grid
-                .grid
-                    @include media-breakpoint-up(desktop)
-                        display: flex
-                        justify-content: flex-end
-            &, a,.link
-                font-size: 24px
-                font-weight: 300
-                text-align: right   
+                width: col(7)
         .lead
             font-family: $heading-font-family
             font-weight: normal
@@ -71,12 +55,26 @@
             @include media-breakpoint-up(desktop)
                 font-size: px2rem(42)
                 width: col(9)
+    &, .hero, main a, main .link
+        color: #FFFFFF
+    .blocks
+        .block-pages--grid
+            .grid
+                @include media-breakpoint-up(desktop)
+                    display: flex
+                    justify-content: flex-end
+        &, a,.link
+            font-size: 24px
+            font-weight: 300
+            text-align: right   
     header#document-header
         display: none
 
 
 //footer
 footer#document-footer
+    @include media-breakpoint-up(desktop)
+        padding-top: 0
     .footer-logo
         display: none
     &, ul, li, a
@@ -98,17 +96,8 @@ footer#document-footer
 .block-call_to_action
     position: relative
     &::after
-        position: absolute
+        @include backgroundnoise
         z-index: 0
-        content: ""
-        background-image: url(/assets/images/rectangle140.png)
-        right: 0
-        left: 0
-        bottom: 0
-        top: 0
-        opacity: 33%
-        // animation-duration: 15s
-        // animation-name: noise
     .call_to_action
         position: relative
         z-index: 1
@@ -137,3 +126,25 @@ footer#document-footer
 .hero--with-image
     .content > hgroup
         width: col(8)
+
+.block-chapter--accent_background
+        position: relative
+        @include in-page-without-sidebar
+            &::after
+                @include backgroundnoise
+                z-index: 0
+        .chapter
+            position: relative
+            @include in-page-with-sidebar
+            &::after
+                @include backgroundnoise
+                z-index: 0
+        .text
+            z-index: 1
+
+                
+                    
+
+        
+        
+            
