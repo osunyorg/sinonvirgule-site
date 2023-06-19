@@ -81,7 +81,7 @@ footer#document-footer
         font-weight: 300
         font-size: pxrem(16)
         line-height: 12px
-    .container 
+    .container
         padding-bottom: 0
         .footer-credit 
             margin-top: 5px
@@ -94,17 +94,26 @@ footer#document-footer
 
 //cta
 .block-call_to_action
+    .container
     position: relative
-    &::after
-        @include backgroundnoise
-        z-index: 0
+    @include in-page-without-sidebar
+        &::after
+            @include backgroundnoise
+            z-index: 0
     .call_to_action
         position: relative
-        z-index: 1
+        @include in-page-with-sidebar
+            &::after
+                @include backgroundnoise
+                z-index: 0
         .description p
+            position: relative
             font-weight: 300
+            z-index: 1
+    .actions
+        position: relative
+        z-index: 1
 
-    
 .image-landscape
     .container
         margin: 0
@@ -141,10 +150,3 @@ footer#document-footer
                 z-index: 0
         .text
             z-index: 1
-
-                
-                    
-
-        
-        
-            
