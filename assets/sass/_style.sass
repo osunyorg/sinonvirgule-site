@@ -95,14 +95,24 @@ footer#document-footer
 //cta
 .block-call_to_action
     position: relative
-    &::after
-        @include backgroundnoise
-        z-index: 0
     .call_to_action
         position: relative
         z-index: 1
         .description p
             font-weight: 300
+    @include in-page-with-sidebar
+        .call_to_action > div
+            background: transparent
+            &::after
+                @include backgroundnoise
+                z-index: -1
+                width: auto
+                left: 0
+                right: calc(Max(#{$grid-gutter}, calc(50vw - #{half($grid-max-width)} + #{$grid-gutter})) * -1)
+    @include in-page-without-sidebar
+         &::after
+            @include backgroundnoise
+            z-index: 0
 
     
 .image-landscape
@@ -110,6 +120,7 @@ footer#document-footer
         margin: 0
         max-width: 100%
         width: col(12)
+
 .blocks .block-image figure img, body.full-width .block-image figure img 
     width: 100%
     height: 460px
@@ -128,19 +139,19 @@ footer#document-footer
         width: col(8)
 
 .block-chapter--accent_background
+    position: relative
+    @include in-page-without-sidebar
+        &::after
+            @include backgroundnoise
+            z-index: 0
+    .chapter
         position: relative
-        @include in-page-without-sidebar
+        @include in-page-with-sidebar
             &::after
                 @include backgroundnoise
                 z-index: 0
-        .chapter
-            position: relative
-            @include in-page-with-sidebar
-            &::after
-                @include backgroundnoise
-                z-index: 0
-        .text
-            z-index: 1
+    .text
+        z-index: 1
 
                 
                     
