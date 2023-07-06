@@ -2,9 +2,9 @@
 //Landingpage
    
 @mixin backgroundnoise
-    background: $color-accent 
     position: absolute
-    z-index: -1
+    z-index: 1
+    opacity: 0.5
     content: ""
     background-image: url(/assets/images/9.png)
     right: 0
@@ -14,6 +14,7 @@
 
 .page__home
     main
+        background: $color-accent 
         position: relative
         min-height: 100vh
         &::after
