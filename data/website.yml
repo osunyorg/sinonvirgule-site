@@ -2,6 +2,6 @@ title: >
   Sinon virgule
 external_domains:
   - "osuny-1b4da.kxcdn.com"
-  - "demo.osuny.org"
+  - "*.osuny.org"
   - "osuny.s3.fr-par.scw.cloud"
   - "e8c1ef77-393b-4094-a3dc-648146479114.usrfiles.com"
