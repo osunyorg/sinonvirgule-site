@@ -4,4 +4,5 @@ external_domains:
   - "osuny-1b4da.kxcdn.com"
   - "*.osuny.org"
   - "osuny.s3.fr-par.scw.cloud"
+  - "tile.openstreetmap.org"
   - "e8c1ef77-393b-4094-a3dc-648146479114.usrfiles.com"
