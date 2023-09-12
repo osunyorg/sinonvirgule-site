@@ -93,14 +93,16 @@ footer#document-footer
         .call_to_action > div
             background: transparent
             &::after
-                @include backgroundnoise
+                background-image: url(/assets/images/noise-2.png)
+                background-size: 100px
                 z-index: -1
                 width: auto
                 left: 0
                 right: calc(Max(#{$grid-gutter}, calc(50vw - #{half($grid-max-width)} + #{$grid-gutter})) * -1)
     @include in-page-without-sidebar
          &::after
-            @include backgroundnoise
+            background-image: url(/assets/images/noise-2.png)
+            background-size: 100px
             z-index: 0
     
 .image-landscape
