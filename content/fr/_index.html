@@ -1,7 +1,8 @@
 ---
-title: >
-  Accueil
+title: "Accueil"
 breadcrumb_title: "Accueil"
+breadcrumbs:
+  - title: "Accueil"
 url: "/"
 
 full_width: true
@@ -18,9 +19,9 @@ translation_key: communication-website-page-c11990f1-89e4-40b4-b754-33b58c17d3f1
 bodyclass: 
 
 children:
-  - /manifeste/
-  - /projets/
-  - /notre-equipe/
+  - "content/fr/pages/manifeste/_index.html"
+  - "content/fr/pages/projets/_index.html"
+  - "content/fr/persons/_index.html"
 meta_description: >
   
 description: >
@@ -49,52 +50,18 @@ contents:
       show_images: false
       layout: grid
       pages:
-        - page: "/manifeste/"
-          slug: "/manifeste/"
-        - page: "/projets/"
-          slug: "/projets/"
-        - page: "/notre-equipe/"
-          slug: "/notre-equipe/"
-      elements:
-        - title: >-
-            Notre manifeste
-          summary: >-
-            Un dimanche, vous commandez des moules frites au restaurant. Le serveur vous apporte des couverts. Une fourchette, un couteau. Jusqu’ici tout va bien. Il fait même beau. Et puis sur le côté de l’assiette vous repérez un petit objet que vous identifiez difficilement. On dirait une moule. Une fausse moule. En plastique. Pour manger de vraies moules sans se salir les mains. L’imitation parfaite des moules qui sont dans votre assiette, mais en plastique.
+        - path: "/manifeste/"
           slug: "manifeste"
-          path: "/manifeste/"
-          url: "/manifeste/"
-          bodyclass: >-
-            
-          image:
-            id: "98485a4e-f093-4938-8912-7908928d3896"
-            alt: >-
-              
-            credit: >-
-              
-        - title: >-
-            Nos projets
-          summary: >-
-            Depuis notre création en 2021, nous travaillons selon trois formats différents. L’étude tout d’abord, en nous saisissant chaque année de sujets ambitieux qui nous tiennent à coeur et que nous souhaitons explorer librement, grâce au soutien financier et de recherche d’un écosystème de partenaires. Le conseil ensuite, en travaillant main dans la main avec des entreprises et collectivités publiques, afin d’amorcer puis d’accompagner leur redirection écologique. L’éveil enfin, pour sensibiliser différentes sphères (salariée, citoyenne, étudiante) aux impacts de l’Anthropocène et aux arbitrages qu’il rend nécessaire.
+          file: "content/fr/pages/manifeste/_index.html"
+          external: false
+        - path: "/projets/"
           slug: "projets"
-          path: "/projets/"
-          url: "/projets/"
-          bodyclass: >-
-            
-        - title: >-
-            Notre équipe
-          summary: >-
-            Né en 2020, le projet sinonvirgule se rassemble autour d’une envie commune : bousculer un statut quo impuissant - tout en prenant soin de la réalité du monde, des organisations et des personnes qui nous entourent. Une ligne de crête périlleuse mais qu’il est aujourd’hui nécessaire d’emprunter.
+          file: "content/fr/pages/projets/_index.html"
+          external: false
+        - path: "/notre-equipe/"
           slug: "notre-equipe"
-          path: "/notre-equipe/"
-          url: "/notre-equipe/"
-          bodyclass: >-
-            
-          image:
-            id: "dfcc50d7-a53d-42f6-9220-8f461cb611a3"
-            alt: >-
-              
-            credit: >-
-              
+          file: "content/fr/persons/_index.html"
+          external: false
 
 
 
