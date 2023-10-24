@@ -21,4 +21,8 @@ items:
     target: https://www.ooonehealth.fr/
     kind: url
     children: []
+  - title: Déviations
+    target: https://deviations.plasticodyssey.org
+    kind: url
+    children: []
 
