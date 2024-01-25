@@ -6,6 +6,8 @@ fr:
   languageCode: fr
   languageName: Français
   permalinks:
+    posts: /nos-projets/:year-:month-:day-:slug/
+    posts_categories: /nos-projets/:slug/
     organizations: /organisations/:slug/
   taxonomies:
     administrator: administrators
