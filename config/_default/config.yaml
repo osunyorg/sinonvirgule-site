@@ -15,4 +15,5 @@ params:
     position: hero
   posts:
     index:
-      show_categories: true
+      layout: grid
+      show_categories: false
