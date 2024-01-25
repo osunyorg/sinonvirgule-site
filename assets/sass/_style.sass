@@ -142,3 +142,14 @@ footer#document-footer
 .block-pages
     margin-bottom: 0
     padding-bottom: $spacing3
+
+.menu
+    .nav-level-2 
+        > li 
+            > a, 
+            > span
+                @include meta
+    .has-children:not(.header-i18n) 
+        .dropdown-menu
+            min-width: auto
+            padding-bottom: $spacing0
