@@ -1,12 +1,4 @@
 ---
 title: Menu social
-items:
-- title: contact@sinonvirgule.fr
-  target: mailto:contact@sinonvirgule.fr
-  kind: url
-  children: []
-- title: LinkedIn
-  target: https://www.linkedin.com/company/sinonvirgule/
-  kind: url
-  children: []
+items: []
 
