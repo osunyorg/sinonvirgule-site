@@ -5,4 +5,5 @@ allowed_domains:
   - "*.osuny.org"
   - "osuny.s3.fr-par.scw.cloud"
   - "tile.openstreetmap.org"
+  - "plausible.io"
   - "e8c1ef77-393b-4094-a3dc-648146479114.usrfiles.com"
