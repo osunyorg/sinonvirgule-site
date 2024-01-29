@@ -5,10 +5,18 @@ fr:
   contentDir: content/fr
   languageCode: fr
   languageName: Français
+  params:
+    social:
+      email: >-
+        contact@sinonvirgule.fr
+      linkedin: >-
+        https://www.linkedin.com/company/sinonvirgule/
   permalinks:
     posts: /nos-projets/:year-:month-:day-:slug/
     posts_categories: /nos-projets/:slug/
     organizations: /organisations/:slug/
+    persons: /notre-equipe/:slug/
+    authors: /notre-equipe/:slug/nos-projets/
   taxonomies:
     administrator: administrators
     author: authors
