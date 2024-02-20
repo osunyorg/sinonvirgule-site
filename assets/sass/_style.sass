@@ -148,10 +148,16 @@ body.full-width
     padding-bottom: $spacing3
 
 .posts__section
+    [itemprop="articleBody"]
+        @include small
+        margin-top: $spacing0
     .post
         .post-meta
             display: none !important
+.reading-time
+    display: none !important
     
+
 .menu
     .nav-level-2 
         > li 
