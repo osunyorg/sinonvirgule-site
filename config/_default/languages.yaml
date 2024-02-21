@@ -16,8 +16,8 @@ fr:
     posts: /nos-projets/:year-:month-:day-:slug/
     posts_categories: /nos-projets/:slug/
     organizations: /organisations/:slug/
-    persons: /notre-equipe/:slug/
-    authors: /notre-equipe/:slug/nos-projets/
+    persons: /equipe/:slug/
+    authors: /equipe/:slug/nos-projets/
   taxonomies:
     administrator: administrators
     author: authors
