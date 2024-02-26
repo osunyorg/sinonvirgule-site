@@ -100,16 +100,10 @@ footer#document-footer
                 left: 0
                 right: calc(Max(#{$grid-gutter}, calc(50vw - #{half($grid-max-width)} + #{$grid-gutter})) * -1)
     @include in-page-without-sidebar
-         &::after
+        &::after
             background-image: url(/assets/images/noise-2.png)
             background-size: 100px
             z-index: 0
-    
-.image-landscape
-    .container
-        margin: 0
-        max-width: 100%
-        width: col(12)
 
 .blocks, 
 body.full-width
