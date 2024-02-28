@@ -31,19 +31,15 @@
                 height: 64px
                 display: block
         .content h1
-            font-size: px2rem(70)
             @include media-breakpoint-up(desktop)
-                font-size: px2rem(160)
-                line-height: px2rem(160)
-                margin-top: $spacing4
-                width: col(7)
+                margin-top: $spacing-6
+                width: columns(7)
         .lead
             font-family: $heading-font-family
             font-weight: normal
-            font-size: px2rem(32)
             @include media-breakpoint-up(desktop)
-                font-size: px2rem(42)
-                width: col(9)
+                font-size: pxToRem(42)
+                width: columns(9)
     &, .hero, main a, main .link
         color: #FFFFFF
     .blocks
@@ -98,7 +94,7 @@ footer#document-footer
                 z-index: -1
                 width: auto
                 left: 0
-                right: calc(Max(#{$grid-gutter}, calc(50vw - #{half($grid-max-width)} + #{$grid-gutter})) * -1)
+                right: calc(Max(#{var(--grid-gutter)}, calc(50vw - #{half(var(--grid-max-width))} + #{var(--grid-gutter)})) * -1)
     @include in-page-without-sidebar
         &::after
             background-image: url(/assets/images/noise-2.png)
@@ -119,8 +115,8 @@ body.full-width
         background-color: white
 
 .hero:not(.hero--with-image)
-    .content > hgroup 
-        width: col(12)
+    .hero-text > hgroup 
+        width: columns(12)
 
 .post 
     .media 
@@ -144,14 +140,14 @@ body.full-width
 
 .block-pages
     margin-bottom: 0
-    padding-bottom: $spacing3
+    padding-bottom: $spacing-5
 
 .posts__section
     main
-        padding-bottom: $spacing4
+        padding-bottom: $spacing-6
     [itemprop="articleBody"]
         @include small
-        margin-top: $spacing0
+        margin-top: $spacing-2
     .post
         .post-meta
             display: none !important    
@@ -190,4 +186,4 @@ body.full-width
     .has-children:not(.header-i18n) 
         .dropdown-menu
             min-width: auto
-            padding-bottom: $spacing0
+            padding-bottom: $spacing-2
