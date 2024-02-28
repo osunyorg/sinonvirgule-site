@@ -13,16 +13,4 @@ items:
   target: "/notre-equipe/"
   kind: page
   children: []
-- title: Nos collabs
-  target: ''
-  kind: blank
-  children:
-  - title: ooonehealth
-    target: https://www.ooonehealth.fr/
-    kind: url
-    children: []
-  - title: Déviations
-    target: https://deviations.plasticodyssey.org
-    kind: url
-    children: []
 
