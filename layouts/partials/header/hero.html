@@ -24,19 +24,22 @@
       {{- end -}}
     {{- end -}}
     <div class="content">
-      {{- if or $subtitle $description -}}
-        <hgroup>
+      <div class="hero-text">
+        {{- if or $subtitle $description -}}
+          <hgroup>
+            <h1>{{ partial "PrepareHTML" .title }}</h1>
+            {{- if $subtitle -}}
+              <p {{ if $subtitle_is_summary -}} class="lead" {{- end -}}>{{ partial "PrepareHTML" $subtitle | markdownify }}</p>
+            {{- end -}}
+            {{- if $description -}}
+              <p>{{ partial "PrepareHTML" .description }}</p>
+            {{- end -}}
+          </hgroup>
+        {{- else -}}
           <h1>{{ partial "PrepareHTML" .title }}</h1>
-          {{- if $subtitle -}}
-            <p {{ if $subtitle_is_summary -}} class="lead" {{- end -}}>{{ partial "PrepareHTML" $subtitle | markdownify }}</p>
-          {{- end -}}
-          {{- if $description -}}
-            <p>{{ partial "PrepareHTML" .description }}</p>
-          {{- end -}}
-        </hgroup>
-      {{- else -}}
-        <h1>{{ partial "PrepareHTML" .title }}</h1>
-      {{- end -}}
+        {{- end -}}
+      </div>
+      
       {{- if .image }}
         <figure>
           {{ if not site.Params.image_sizes.design_system.lightbox.disabled }}
