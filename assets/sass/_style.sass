@@ -109,15 +109,18 @@ footer#document-footer
     .hero-text > hgroup 
         width: columns(12)
 
-.hero--with-image 
-    .content
-        @include media-breakpoint-up(desktop)
-            flex-direction: row-reverse
-            figure
-                width: columns(4)
-            .hero-text
-                margin-top: 0
-                width: columns(8)
+.category--eveil,
+.category--etudes,
+.category--conseil
+    .hero--with-image
+        .content
+            @include media-breakpoint-up(desktop)
+                flex-direction: row-reverse
+                figure
+                    width: columns(4)
+                .hero-text
+                    margin-top: 0
+                    width: columns(8)
 
 .post 
     .media 
