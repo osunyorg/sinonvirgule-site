@@ -102,8 +102,19 @@ footer#document-footer
             z-index: 0
 
 .organizations
+    @include media-breakpoint-up(desktop)
+        @include grid(9)
     .media
-        background-color: white
+        background: none
+        padding: 0
+.organization 
+    .organization-title
+        opacity: 0
+        height: 0
+        overflow: hidden
+    .media
+        img
+            mix-blend-mode: multiply
 
 .hero:not(.hero--with-image)
     .hero-text > hgroup 
