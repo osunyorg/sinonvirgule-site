@@ -16,7 +16,9 @@ fr:
     posts: /nos-projets/:year-:month-:day-:slug/
     posts_categories: /nos-projets/:slug/
     organizations: /organisations/:slug/
+    organizations_categories: /organisations/:slug/
     persons: /equipe/:slug/
+    persons_categories: /equipe/:slug/
     authors: /equipe/:slug/nos-projets/
   taxonomies:
     administrator: administrators
@@ -24,6 +26,8 @@ fr:
     diploma: diplomas
     events_category: events_categories
     location: locations
+    organizations_category: organizations_categories
+    persons_category: persons_categories
     posts_category: posts_categories
     projects_category: projects_categories
     researcher: researchers
