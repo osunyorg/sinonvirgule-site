@@ -6,7 +6,7 @@ items:
   kind: page
   children: []
 - title: Nos projets
-  target: "/nos-projets/"
+  target: "/projets-1/"
   kind: page
   children: []
 - title: Notre équipe
