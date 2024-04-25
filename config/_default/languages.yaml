@@ -13,13 +13,13 @@ fr:
       linkedin: >-
         https://www.linkedin.com/company/sinonvirgule/
   permalinks:
-    posts: /nos-projets/:year-:month-:day-:slug/
-    posts_categories: /nos-projets/:slug/
+    posts: /projets/:year-:month-:day-:slug/
+    posts_categories: /projets/:slug/
     organizations: /organisations/:slug/
     organizations_categories: /organisations/:slug/
     persons: /equipe/:slug/
     persons_categories: /equipe/:slug/
-    authors: /equipe/:slug/nos-projets/
+    authors: /equipe/:slug/projets/
   taxonomies:
     administrator: administrators
     author: authors
