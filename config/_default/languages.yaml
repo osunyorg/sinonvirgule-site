@@ -13,17 +13,23 @@ fr:
       linkedin: >-
         https://www.linkedin.com/company/sinonvirgule/
   permalinks:
-    posts: /nos-projets/:year-:month-:day-:slug/
-    posts_categories: /nos-projets/:slug/
+    posts: /projets/:year-:month-:day-:slug/
+    posts_categories: /projets/:slug/
     organizations: /organisations/:slug/
+    organizations_categories: /organisations/:slug/
     persons: /equipe/:slug/
-    authors: /equipe/:slug/nos-projets/
+    persons_categories: /equipe/:slug/
+    authors: /equipe/:slug/projets/
   taxonomies:
     administrator: administrators
     author: authors
     diploma: diplomas
     events_category: events_categories
+    location: locations
+    organizations_category: organizations_categories
+    persons_category: persons_categories
     posts_category: posts_categories
+    projects_category: projects_categories
     researcher: researchers
     teacher: teachers
     volume: volumes

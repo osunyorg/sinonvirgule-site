@@ -20,7 +20,7 @@
         // &::after
         //     @include backgroundnoise
     .hero
-        padding-bottom: 0
+        // padding-bottom: 0
         .container
             .content
                 padding-top: $spacing-2
@@ -75,12 +75,16 @@ footer#document-footer
             align-self: self-end
 
 //quotes
-.block-testimonials blockquote p
-        font-style: normal
+.block-testimonials 
+    blockquote 
+        p
+            font-style: normal
 
 //cta
 .block-call_to_action
     position: relative
+    &:last-of-type
+        margin-bottom: $spacing-5 !important
     .call_to_action
         position: relative
         z-index: 1
@@ -102,12 +106,36 @@ footer#document-footer
             z-index: 0
 
 .organizations
+    @include media-breakpoint-up(desktop)
+        @include grid(9)
     .media
-        background-color: white
+        background: none
+        padding: 0
+.organization 
+    .organization-title
+        opacity: 0
+        height: 0
+        overflow: hidden
+    .media
+        img
+            mix-blend-mode: multiply
 
 .hero:not(.hero--with-image)
     .hero-text > hgroup 
         width: columns(12)
+
+// .category--eveil,
+// .category--etudes,
+// .category--conseil
+//     .hero--with-image
+//         .content
+//             @include media-breakpoint-up(desktop)
+//                 flex-direction: row-reverse
+//                 figure
+//                     width: columns(4)
+//                 .hero-text
+//                     margin-top: 0
+//                     width: columns(8)
 
 .post 
     .media 
@@ -133,7 +161,8 @@ footer#document-footer
     margin-bottom: 0
     padding-bottom: $spacing-5
 
-.posts__section
+.posts__section,
+.pages__section
     main
         padding-bottom: $spacing-6
     [itemprop="articleBody"]
