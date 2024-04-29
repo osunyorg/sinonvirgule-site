@@ -22,13 +22,15 @@
     .hero
         padding-bottom: 0
         .container
-            .content::before
-                content: ""
-                background-image: url(/assets/images/logo_blanc.svg)
-                background-repeat: no-repeat
-                width: 130px
-                height: 64px
-                display: block
+            .content
+                padding-top: $spacing-2
+                &::before
+                    content: ""
+                    background-image: url(/assets/images/logo_blanc.svg)
+                    background-repeat: no-repeat
+                    width: 130px
+                    height: 64px
+                    display: block
         .content h1
             @include media-breakpoint-up(desktop)
                 margin-top: $spacing-6
