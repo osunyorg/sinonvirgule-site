@@ -18,5 +18,5 @@ params:
     index:
       layout: grid
       options:
-        hide_category: true
+        categories: false
       
