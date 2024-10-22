@@ -9,6 +9,12 @@
 {{- $summary := partial "PrepareText" .context.Params.summary -}}
 {{- $subtitle_is_summary := false -}}
 
+{{ $button := .button | default .context.Params.header_cta }}
+{{ $title_attribute := "" | safeHTMLAttr }}
+{{ if site.Params.search.active }}
+  {{ $title_attribute = "data-pagefind-weight='10'" | safeHTMLAttr }}
+{{ end }}
+
 {{ if not $subtitle }}
   {{ if and (eq site.Params.summary.position "hero") $summary }}
    {{ $subtitle = $summary }}
@@ -25,17 +31,14 @@
     {{- end -}}
     <div class="content">
       <div class="hero-text">
-        {{- if or $subtitle $description -}}
-          <hgroup>
-            <h1>{{ partial "PrepareHTML" .title }}</h1>
-            {{- if $subtitle -}}
-              <p {{ if $subtitle_is_summary -}} class="lead" {{- end -}}>{{ partial "PrepareHTML" $subtitle | markdownify }}</p>
-            {{- end -}}
-            {{- if $description -}}
-              <p>{{ partial "PrepareHTML" .description }}</p>
-            {{- end -}}
+        {{ if or $subtitle $description }}
+          <hgroup {{ if $subtitle_is_summary -}} class="has-lead" {{- end }}>
+            <h1 {{ $title_attribute }}>{{ partial "PrepareHTML" .title }}</h1>
+            {{ with $subtitle }}
+              {{ safeHTML . }}
+            {{ end }}
           </hgroup>
-        {{- else -}}
+        {{ else }}
           <h1>{{ partial "PrepareHTML" .title }}</h1>
         {{- end -}}
       </div>
