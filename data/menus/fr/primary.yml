@@ -5,12 +5,15 @@ items:
   target: "/manifeste/"
   kind: page
   children: []
+  file: content/fr/pages/manifeste/_index.html
 - title: Nos projets
   target: "/nos-projets/"
   kind: page
   children: []
+  file: content/fr/pages/nos-projets/_index.html
 - title: Notre équipe
   target: "/notre-equipe/"
   kind: page
   children: []
+  file: content/fr/pages/notre-equipe/_index.html
 
