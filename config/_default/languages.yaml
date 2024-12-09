@@ -7,11 +7,20 @@ fr:
   languageCode: fr
   languageName: Français
   params:
-    social:
-      email: >-
-        contact@sinonvirgule.fr
-      linkedin: >-
-        https://www.linkedin.com/company/sinonvirgule/
+    contact_details:
+      emails:
+        email:
+          label: >-
+            contact@sinonvirgule.fr
+          value: >-
+            mailto:contact@sinonvirgule.fr
+      social_networks:
+        linkedin:
+          label: >-
+            sinonvirgule
+          value: >-
+            https://www.linkedin.com/company/sinonvirgule/
+
   permalinks:
     posts: /projets/:year-:month-:day-:slug/
     posts_categories: /projets/:slug/
