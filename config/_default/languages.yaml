@@ -22,13 +22,6 @@ fr:
           value: >-
             https://www.linkedin.com/company/sinonvirgule/
 
-  permalinks:
-    pages_categories: /:slug/
-    posts: /projets/:year-:month-:day-:slug/
-    posts_categories: /projets/:slug/
-    persons: /equipe/:slug/
-    persons_categories: /equipe/categories/:slug/
-    authors: /equipe/:slug/projets/
   taxonomies:
     administrator: administrators
     author: authors
