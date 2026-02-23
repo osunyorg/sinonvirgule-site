@@ -7,6 +7,11 @@ osuny:
   website:
     id: 2b736296-05cb-44af-bfa8-8b1ec398a946
 
+## PARAMS
+params:
+  _merge: deep
+  plausible: "sinonvirgule.fr"
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
